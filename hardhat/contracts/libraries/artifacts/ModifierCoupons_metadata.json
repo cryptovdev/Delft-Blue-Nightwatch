@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tokenDistribution",
+						"type": "string"
+					}
+				],
+				"name": "TradingEnded",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hardhat/contracts/libraries/AppStorageCoupons.sol": "ModifierCoupons"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hardhat/contracts/interfaces/IDiamondCut.sol": {
+			"keccak256": "0x9875549c8bbc63ea8fcd713805d48fa78762f7d90ba524a44b389ff4a1704ed2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6395cd05bdc5f64c24e90cf4fd20e93e4653ccca861f783d482081689215d05b",
+				"dweb:/ipfs/QmXkVhHjTYvbdzGnHAENxZUfXumw1rsesMDbTXiPrMixBg"
+			]
+		},
+		"hardhat/contracts/libraries/AppStorageCoupons.sol": {
+			"keccak256": "0x8133aa7b5c22bc312c97c3084ce7c926f8ecedd5ad487c65dd761c448b1f3c15",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://be3eb11b616a717f6c2ab58c4c89f408d938f311b4c83befc926679959f54353",
+				"dweb:/ipfs/QmVxMko5dG7WBVVZ6gqF9mcJve6DzMGomQvGyD9hoGbf2w"
+			]
+		},
+		"hardhat/contracts/libraries/LibDiamond.sol": {
+			"keccak256": "0x9dc4d0c6427a1248bc9270966088cbfb664f674a5d9366bcb62e37cec4624201",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5bdbce61bcddaf24cf57424aab6483bee364e6319282e86740922a3092ccef7f",
+				"dweb:/ipfs/QmW8qJsXeV5okFusVCKkZnxJnxBh39Y8RWoxtqTGc6Popw"
+			]
+		}
+	},
+	"version": 1
+}
