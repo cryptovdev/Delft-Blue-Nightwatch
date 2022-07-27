@@ -35,6 +35,7 @@ contract CouponToken is IERC165, IERC721,  IERC721Metadata, ModifierCoupons {
     /// @param _owner An address for whom to query the balance
     /// @return The number of NFTs owned by `_owner`, possibly zero
     function balanceOf(address _owner) external override view returns (uint256){
+        require(_owner != address(0x0));
         return s.internalBalanceOf[_owner];
     }
 
@@ -206,7 +207,7 @@ contract CouponToken is IERC165, IERC721,  IERC721Metadata, ModifierCoupons {
         return  s.rafflingStorage[uint256(s.lockingBlockhash) % s.rafflingStorage.length];
     }
 
-    function supportsInterface(bytes4 interfaceID) external view returns (bool){
+    function supportsInterface(bytes4 interfaceID) external override view returns (bool){
         return s.supportedInterfaces[interfaceID];
     }
 
